@@ -111,9 +111,11 @@ button2.addEventListener("click", () => {
     alert("You clicked the Button!");
 });
 
-button3.addEventListener("mouseover", () => {
+button3.addEventListener("mouseover",mouseOverHandler);
+function mouseOverHandler()
+{    
     alert("Mouse over the Button!");
-});
+}
 
 //@ Use at least two Browser Object Model (BOM) properties or methods.
 
@@ -131,5 +133,27 @@ const bomMethodsDropdown = document.getElementById("bom-methods");
         });
 
 //@Include at least one form and/or input with HTML attribute validation.
+        //HTML attribute validation in .html file
+        
+//@Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, but should include event-based validation in addition to the HTML attribute validation.)
+// required,minLength, maxLength, pattern
+    const form = document.getElementById("myForm");
+    const input1 = document.getElementById("name");
+        const validationMessage = document.getElementById("validation-message");
+        // Event-based validation on input (while typing)
+        input.addEventListener("input", function() {
+            if (input.validity.valid) {
+                validationMessage.style.display = 'none'; // Hide message if input is valid
+            } else {
+                validationMessage.style.display = 'inline'; // Show message if input is invalid
+            }
+        });
 
-  
+        form.addEventListener("submit", function(event) {
+            if (!input1.checkValidity()) {
+                event.preventDefault(); // Prevent form submission
+                validationMessage.style.display = 'inline'; // Show validation message
+            } else {
+                validationMessage.style.display = 'none'; // Hide validation message
+            }
+        });

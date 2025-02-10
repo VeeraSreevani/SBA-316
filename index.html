@@ -45,12 +45,13 @@
         <option value="setTimeout(function, milliseconds)">setTimeout()</option>
     </select>
  <!-- Form with input and validation -->
- <form id="conceptForm">
-    <label for="task">Enter the concept:</label>
-    <input type="text" id="task" name="task" placeholder="Enter the concept" required>
-    <button type="submit" id="btn-submit">Enter</button>
-    <span id="validation-message" style="color: red; display: none;">Please fill out this field.</span>
+ <form id="myForm">
+    <label for="name">Name (min 3 chars):</label>
+    <input type="text" id="name" name="name" required minlength="3">
+    <button type="submit">Submit</button>
 </form>
+
+<span id="validation-message" style="color: red; display: none;">Please enter a valid name (min 3 characters).</span>
 
    </body>
 </html>

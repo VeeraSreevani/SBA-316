@@ -1,6 +1,6 @@
 # Description
-DOM & BOM COncepts
+DOM & BOM Concepts
 ## technologies
-HTML
-CSS
-JAVASCRIPT
+HTML,
+CSS,
+JAVASCRIPT.
