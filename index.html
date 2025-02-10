@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title"><u>DOM & BOM Concepts</u></h1>
+    <h2 id="h2">DOM Properties</h2>
+    <ul>
+        <li>id</li>
+        <li>className</li>
+        <li>tagName</li>
+        <li>innerHtml</li>
+    </ul>
+
+    <input type = "text" id ="task" placeholder="enter the concept">
+    <button id="btn"> Enter</button>
+    <h2>DOM Techniques</h2>
+    <ul id="list"></ul>
+
+    <h3><u>setAttribute</u></h3>
+    <img id="image" src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=is&k=20&c=hTfPWNhNUjyWL189yEQyKVmmZA6Mg3rOaah1NV7_-p8=" alt="image" width="50px" height = "50px"><br>
+    <button id="changeImaBtn">Click Image</button>
+    <br><br>
+    <button id="button2"><strong>Click</strong></button>
+    <button id="button3"><strong>Mouse Over</strong></button>
+    <br><br>
+
+    <h2>BOM Properties Example</h2>
+    <p><strong>Browser URL: </strong> <span id="browser-url"></span></p>
+    <p><strong>Screen Width:  </strong><span id="screen-width"></span></p>
+    <label for="bom-methods">Select BOM Method:</label>
+    <select id="bom-methods">
+        <option value="alert()">alert()</option>
+        <option value="confirm()">confirm()</option>
+        <option value="prompt(message, defaultText)">prompt()</option>
+        <option value="open(url, name, features)">open() </option>
+        <option value="close()">close()</option>
+        <option value="moveTo(x, y)">moveTo()</option>
+        <option value="resizeTo(width, height)">resizeTo()</option>
+        <option value="setTimeout(function, milliseconds)">setTimeout()</option>
+    </select>
+ <!-- Form with input and validation -->
+ <form id="conceptForm">
+    <label for="task">Enter the concept:</label>
+    <input type="text" id="task" name="task" placeholder="Enter the concept" required>
+    <button type="submit" id="btn-submit">Enter</button>
+    <span id="validation-message" style="color: red; display: none;">Please fill out this field.</span>
+</form>
+
+   </body>
+</html>
